@@ -1,0 +1,168 @@
+body {
+
+    font-family: Arial, sans-serif;
+
+    text-align: center;
+
+    margin: 2px;
+
+    background-color: #222; /* Change the background color to mid-grey (#d3d3d3) */
+
+}
+
+ 
+
+h1 {
+
+    margin-bottom: 0px;
+
+}
+
+ 
+
+h2 {
+
+    margin: 1px;
+
+}
+
+ 
+
+.primary-buttons-container {
+
+    display: flex;
+
+    flex-direction: row;
+
+    gap: 10px;
+
+    align-items: center; /* Center the items vertically in the container */
+
+    justify-content: center; /* Align items to the left side */
+
+    margin-bottom: 5px;
+
+    position: sticky;
+
+    top: 0;
+
+    background-color: #111;
+
+    padding: 10px;
+
+}
+
+ 
+
+.player-position-label {
+
+    text-align: left;
+
+                color: #fff;
+
+}
+
+ 
+
+.blind-position-label {
+
+    text-align: left;
+
+                color: #4CAF50;
+
+                font-style: italic;
+
+}
+
+ 
+
+.info-position-label {
+
+    text-align: left;
+
+                color: #fff;
+
+}
+
+ 
+
+/* Style the row buttons container */
+
+.row-buttons-container {
+
+                align-items: center;
+
+    display: flex;
+
+    gap: 30px; /* Add a small gap between buttons */
+
+    justify-content: center; /* Center the buttons horizontally */
+
+    margin-bottom: 0px;
+
+}
+
+ 
+
+button {
+
+    padding: 5px 10px;
+
+    background-color: #444; /* Use dark grey color for the buttons */
+
+    color: #fff;
+
+    border: none;
+
+    border-radius: 20px; /* Add rounded edges to the buttons */
+
+    cursor: pointer;
+
+    outline: none; /* Remove the default outline style */
+
+    transition: box-shadow 0.3s ease; /* Add transition for the box-shadow property */
+
+}
+
+ 
+
+/* Apply green border to the clicked button */
+
+button.clicked {
+
+    box-shadow: 0 0 0 2px #4CAF50;
+
+                color: #4CAF50;
+
+}
+
+ 
+
+/* Set the text in row buttons to italic */
+
+.row-buttons-container button {
+
+    font-style: italic;
+
+}
+
+ 
+
+ 
+
+#image-container {
+
+    display: none;
+
+    margin-top: 5px;
+
+}
+
+ 
+
+#image {
+
+    max-width: 105%;
+	max-size: 90%;
+
+}
