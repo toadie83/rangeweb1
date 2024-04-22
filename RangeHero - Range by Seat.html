@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Just a thing</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<script>
+
+var intervalID = window.setInterval(myCallback, 3000);
+
+function myCallback() {
+
+var s = document.getElementById('randomNumber');
+
+var number = (Math.floor((Math.random()*100)+1));
+
+s.innerHTML = number;
+
+}
+
+</script>
+
+<h1 id="randomNumber" style="font-size: 18px;text-centre: left;color: #4CAF50;">0</h1>
+
+<h2 id="rng range" style="font-size: 12px;text-centre: left;color: #4CAF50;">1-33 fold, 34-66 call, 67-100 3bet</h2>
+
+    <div class="primary-buttons-container">
+
+                <div class="info-position-label"> Player Seat: </div>
+
+                <button onclick="toggleRow('SB')" id="SBButton">SB</button>     
+
+                <button onclick="toggleRow('BTN')" id="BTNButton">BTN</button>               
+
+                <button onclick="toggleRow('CO')" id="COButton">CO</button>  
+
+                <button onclick="toggleRow('HJ')" id="HJButton">HJ</button>
+
+                <button onclick="toggleRow('LJ')" id="LJButton">LJ</button>
+
+                <button onclick="toggleRow('UTG1')" id="UTG1Button">UTG+1</button>
+
+                <button onclick="toggleRow('UTG')" id="UTGButton">UTG</button>
+
+    </div>
+
+               
+
+                <!-- SB -->
+
+    <div class="row-buttons-container" id="SBButtons" style="display: none;">
+
+                <div class="blind-position-label">SB</div>
+
+        <button onclick="displayImage('MTT/IMAGE%20BACKUPS/Range Charts/100BB/SB.png')">100BB</button>
+
+                                <button onclick="displayImage('MTT/IMAGE%20BACKUPS/Range Charts/40BB/SB.png')">40BB</button>
+                                <button onclick="displayImage('MTT/IMAGE%20BACKUPS/Range Charts/30BB/SB.png')">30BB</button>
+								<button onclick="displayImage('MTT/IMAGE%20BACKUPS/Range Charts/25BB/SB.png')">25BB</button>
+                                <button onclick="displayImage('MTT/IMAGE%20BACKUPS/Range Charts/20BB/SB.png')">20BB</button>
+								<button onclick="displayImage('MTT/IMAGE%20BACKUPS/Range Charts/17BB/SB.png')">17BB</button>
+								<button onclick="displayImage('MTT/IMAGE%20BACKUPS/Range Charts/14BB/SB.png')">14BB</button>
+
+                                <button onclick="displayImage('MTT/IMAGE%20BACKUPS/shove/SBshove.png')">10BB</button>
+
+
+    </div>
+
+               
+
+                <!-- BTN -->
+
+    <div class="row-buttons-container" id="BTNButtons" style="display: none;">
+
+                                <div class="blind-position-label">BTN</div>
+
+                    <button onclick="displayImage('MTT/IMAGE%20BACKUPS/Range Charts/100BB/BTN.png')">100BB</button>
+
+                                <button onclick="displayImage('MTT/IMAGE%20BACKUPS/Range Charts/40BB/BTN.png')">40BB</button>
+                                <button onclick="displayImage('MTT/IMAGE%20BACKUPS/Range Charts/30BB/BTN.png')">30BB</button>
+								<button onclick="displayImage('MTT/IMAGE%20BACKUPS/Range Charts/25BB/BTN.png')">25BB</button>
+                                <button onclick="displayImage('MTT/IMAGE%20BACKUPS/Range Charts/20BB/BTN.png')">20BB</button>
+								<button onclick="displayImage('MTT/IMAGE%20BACKUPS/Range Charts/17BB/BTN.png')">17BB</button>
+								<button onclick="displayImage('MTT/IMAGE%20BACKUPS/Range Charts/14BB/BTN.png')">14BB</button>
+
+                                <button onclick="displayImage('MTT/IMAGE%20BACKUPS/shove/BTNshove.png')">10BB</button>
+
+    </div>
+
+               
+
+                <!-- CO -->
+
+    <div class="row-buttons-container" id="COButtons" style="display: none;">
+
+                                <div class="blind-position-label">CO</div>
+
+                    <button onclick="displayImage('MTT/IMAGE%20BACKUPS/Range Charts/100BB/CO.png')">100BB</button>
+
+                                <button onclick="displayImage('MTT/IMAGE%20BACKUPS/Range Charts/40BB/CO.png')">40BB</button>
+                                <button onclick="displayImage('MTT/IMAGE%20BACKUPS/Range Charts/30BB/CO.png')">30BB</button>
+								<button onclick="displayImage('MTT/IMAGE%20BACKUPS/Range Charts/25BB/CO.png')">25BB</button>
+                                <button onclick="displayImage('MTT/IMAGE%20BACKUPS/Range Charts/20BB/CO.png')">20BB</button>
+								<button onclick="displayImage('MTT/IMAGE%20BACKUPS/Range Charts/17BB/CO.png')">17BB</button>
+								<button onclick="displayImage('MTT/IMAGE%20BACKUPS/Range Charts/14BB/CO.png')">14BB</button>
+
+                                <button onclick="displayImage('MTT/IMAGE%20BACKUPS/shove/COshove.png')">10BB</button>
+
+    </div>
+
+               
+
+                <!-- HJ -->
+
+    <div class="row-buttons-container" id="HJButtons" style="display: none;">
+
+                                <div class="blind-position-label">HJ</div>
+
+                    <button onclick="displayImage('MTT/IMAGE%20BACKUPS/Range Charts/100BB/HJ.png')">100BB</button>
+
+                                <button onclick="displayImage('MTT/IMAGE%20BACKUPS/Range Charts/40BB/HJ.png')">40BB</button>
+                                <button onclick="displayImage('MTT/IMAGE%20BACKUPS/Range Charts/30BB/HJ.png')">30BB</button>
+								<button onclick="displayImage('MTT/IMAGE%20BACKUPS/Range Charts/25BB/HJ.png')">25BB</button>
+                                <button onclick="displayImage('MTT/IMAGE%20BACKUPS/Range Charts/20BB/HJ.png')">20BB</button>
+								<button onclick="displayImage('MTT/IMAGE%20BACKUPS/Range Charts/17BB/HJ.png')">17BB</button>
+								<button onclick="displayImage('MTT/IMAGE%20BACKUPS/Range Charts/14BB/HJ.png')">14BB</button>
+
+                                <button onclick="displayImage('MTT/IMAGE%20BACKUPS/shove/HJshove.png')">10BB</button>
+
+    </div>
+
+                               
+
+                <!-- LJ -->
+
+    <div class="row-buttons-container" id="LJButtons" style="display: none;">
+
+                                <div class="blind-position-label">LJ</div>
+
+                    <button onclick="displayImage('MTT/IMAGE%20BACKUPS/Range Charts/100BB/LJ.png')">100BB</button>
+
+                                <button onclick="displayImage('MTT/IMAGE%20BACKUPS/Range Charts/40BB/LJ.png')">40BB</button>
+                                <button onclick="displayImage('MTT/IMAGE%20BACKUPS/Range Charts/30BB/LJ.png')">30BB</button>
+								<button onclick="displayImage('MTT/IMAGE%20BACKUPS/Range Charts/25BB/LJ.png')">25BB</button>
+                                <button onclick="displayImage('MTT/IMAGE%20BACKUPS/Range Charts/20BB/LJ.png')">20BB</button>
+								<button onclick="displayImage('MTT/IMAGE%20BACKUPS/Range Charts/17BB/LJ.png')">17BB</button>
+								<button onclick="displayImage('MTT/IMAGE%20BACKUPS/Range Charts/14BB/LJ.png')">14BB</button>
+
+                                <button onclick="displayImage('MTT/IMAGE%20BACKUPS/shove/LJshove.png')">10BB</button>
+
+    </div>
+
+               
+
+                <!-- UTG1 -->
+
+    <div class="row-buttons-container" id="UTG1Buttons" style="display: none;">
+
+                                <div class="blind-position-label">UTG+1</div>
+
+                    <button onclick="displayImage('MTT/IMAGE%20BACKUPS/Range Charts/100BB/UTG1.png')">100BB</button>
+
+                                <button onclick="displayImage('MTT/IMAGE%20BACKUPS/Range Charts/40BB/UTG1.png')">40BB</button>
+                                <button onclick="displayImage('MTT/IMAGE%20BACKUPS/Range Charts/30BB/UTG1.png')">30BB</button>
+								<button onclick="displayImage('MTT/IMAGE%20BACKUPS/Range Charts/25BB/UTG1.png')">25BB</button>
+                                <button onclick="displayImage('MTT/IMAGE%20BACKUPS/Range Charts/20BB/UTG1.png')">20BB</button>
+								<button onclick="displayImage('MTT/IMAGE%20BACKUPS/Range Charts/17BB/UTG1.png')">17BB</button>
+								<button onclick="displayImage('MTT/IMAGE%20BACKUPS/Range Charts/14BB/UTG1.png')">14BB</button>
+
+                                <button onclick="displayImage('MTT/IMAGE%20BACKUPS/shove/UTG1shove.png')">10BB</button>
+
+    </div>               
+
+ 
+
+                <!-- UTG -->
+
+    <div class="row-buttons-container" id="UTGButtons" style="display: none;">
+
+                                <div class="blind-position-label">UTG</div>
+
+                    <button onclick="displayImage('MTT/IMAGE%20BACKUPS/Range Charts/100BB/UTG.png')">100BB</button>
+
+                                <button onclick="displayImage('MTT/IMAGE%20BACKUPS/Range Charts/40BB/UTG.png')">40BB</button>
+                                <button onclick="displayImage('MTT/IMAGE%20BACKUPS/Range Charts/30BB/UTG.png')">30BB</button>
+								<button onclick="displayImage('MTT/IMAGE%20BACKUPS/Range Charts/25BB/UTG.png')">25BB</button>
+                                <button onclick="displayImage('MTT/IMAGE%20BACKUPS/Range Charts/20BB/UTG.png')">20BB</button>
+								<button onclick="displayImage('MTT/IMAGE%20BACKUPS/Range Charts/17BB/UTG.png')">17BB</button>
+								<button onclick="displayImage('MTT/IMAGE%20BACKUPS/Range Charts/14BB/UTG.png')">14BB</button>
+
+                                <button onclick="displayImage('MTT/IMAGE%20BACKUPS/shove/UTGshove.png')">10BB</button>
+
+    </div>               
+
+ 
+
+    <div id="image-container">
+
+        <img id="image" src="" alt="">
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
